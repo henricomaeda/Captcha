@@ -23,7 +23,7 @@ namespace Captcha
             // Definindo mensagem de seleção no título.
             if (i == 0) Text = "Selecione a imagem que representa os cookies.";
             else if (i == 1) Text = "Selecione a imagem que representa as folhas.";
-            else if (i == 2) Text = "Selecione a imagem que representa um laço.";
+            else if (i == 2) Text = "Selecione a imagem que representa um laço vermelho.";
             else Text = "Não foi possível realizar a mensagem de seleção.";
         }
 
@@ -52,7 +52,8 @@ namespace Captcha
             if (Enabled != false) Application.ExitThread();
             else
             {
-                // Processando se usuário.
+                // Processando se a verificação detectar um usuário.
+                Text = "Verificação realizada com sucesso!";
                 picCookie.Enabled = false;
                 picLeaves.Enabled = false;
                 picRibbon.Enabled = false;

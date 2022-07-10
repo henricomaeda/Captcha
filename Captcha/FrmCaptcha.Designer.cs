@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCaptcha));
             this.lblTitle = new System.Windows.Forms.Label();
             this.picCookie = new System.Windows.Forms.PictureBox();
             this.picLeaves = new System.Windows.Forms.PictureBox();
@@ -115,6 +116,7 @@
             this.Controls.Add(this.picLeaves);
             this.Controls.Add(this.picCookie);
             this.Controls.Add(this.lblTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCaptcha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mensagem de captcha";
